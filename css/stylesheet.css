@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'pixels'; 
+  src: url(../fonts/PressStart2P.ttf)
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- typography ---- */
+
+body {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+p {
+  margin: 0;
+}
+
+/* ---- layout ---- */
+
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color:black;
+}
+main{
+  
+  margin-top: 0;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px; /* Resizes the container to 728px for large screens */
+    margin: 0 auto;
+   
+  }
+}
+
+/* ---- components ---- */
+
+.game {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color:black;
+  border: solid #00ff00;;
+}
+
+.game header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.game .lives {
+  flex: 1;
+  color:#00ff00;
+    font-size: medium;
+    font-family: "pixels";
+}
+
+.game .score {
+  flex: 1;
+  
+}
+
+.game .label {
+  font-weight: bold;
+}
+
+.game .value {
+  font-style: italic;
+}
+
+.game .canvas-container {
+  flex: 1;
+}
+
+/* ************************************estilos del splashscreen*/
+  
+  .splash {
+    background-color: black;
+   
+    height: 650px;
+  }
+
+  .gameover {
+    height: 650px;
+    margin-top: 0;
+    background-color: black;
+    background-size: cover;
+    color:#00ff00;
+    font-size: medium;
+    font-family: "pixels";
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .greenblock{
+    border: solid #00ff00;
+    height: 250px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    
+  }
+  .gover{
+    font-size: x-large;
+  }
+  .score{
+    color:#00ff00;
+    font-size: medium;
+    font-family: "pixels";
+  }
+ 
+  
